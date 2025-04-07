@@ -66,9 +66,9 @@ KatTab:CreateButton({
 KatTab:CreateSection("Key🔑")
 
 KatTab:CreateButton({
-   Name = "Doors Vynixius Hub",
+   Name = "Not King Hub",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui'))()
    end,
 })
 
