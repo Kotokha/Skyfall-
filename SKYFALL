@@ -52,13 +52,6 @@ UniversalsTab:CreateButton({
    end,
 })
 
-UniversalsTab:CreateButton({
-   Name = "DomainX",
-   Callback = function()
-        loadstring(game:HttpGet('https://sirius.menu/domainx'))() 
-   end,
-})
-
 -- KAT Tab
 local KatTab = Window:CreateTab("KAT", nil)
 KatTab:CreateSection("Keyless❌🔑")
@@ -84,30 +77,9 @@ local PrisonTab = Window:CreateTab("Prison Life", nil)
 local PrisonSection = PrisonTab:CreateSection("Keyless❌🔑")
 
 PrisonTab:CreateButton({
-   Name = "Tbao Hub (KAT)",
+   Name = "Tbao Hub (PL)",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
-   end,
-})
-
-PrisonTab:CreateButton({
-   Name = "Shark Bite 2 Pearl Hub",
-   Callback = function()
-        loadstring(game:HttpGet('https://ppearl.vercel.app'))()
-   end,
-})
-
-PrisonTab:CreateButton({
-   Name = "Notoriety Requiem",
-   Callback = function()
-        loadstring(game:HttpGet("https://scriptblox.com/raw/RUSH-HOUR-Notoriety-Requiem-Evolution-11364"))()
-   end,
-})
-
-PrisonTab:CreateButton({
-   Name = "DomainX",
-   Callback = function()
-        loadstring(game:HttpGet('https://sirius.menu/domainx'))() 
    end,
 })
 
@@ -123,7 +95,7 @@ BFTab:CreateButton({
 })
 
 BFTab:CreateButton({
-   Name = "Tbao auto bounty (key: 1234 )🈯",
+   Name = "Tbao auto bounty (key: 1234 )(not working❌)🈯",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubAutobouty"))()
    end,
@@ -147,4 +119,9 @@ InfoTab:CreateButton({
          Duration = 3
       })
    end,
+})
+
+InfoTab:CreateParagraph({
+   Title = "Info",
+   Content = "Join Discord for some of the hub keys"
 })
