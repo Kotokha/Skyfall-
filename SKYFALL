@@ -1,3 +1,18 @@
+-- Fondo de Gojo
+local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+gui.Name = "SkyfallBackground"
+gui.ResetOnSpawn = false
+
+local background = Instance.new("ImageLabel", gui)
+background.Name = "BackgroundImage"
+background.Image = "rbxassetid://11401525648" -- ID de imagen de Gojo
+background.Size = UDim2.new(1, 0, 1, 0)
+background.Position = UDim2.new(0, 0, 0, 0)
+background.BackgroundTransparency = 1
+background.ImageTransparency = 0.2 -- Ajusta esto para que el menú se vea mejor encima
+background.ZIndex = 0
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -48,7 +63,7 @@ local UniversalsSection = UniversalsTab:CreateSection("Universals scripts")
 UniversalsTab:CreateButton({
    Name = "Infinite Yield",
    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
 
@@ -59,7 +74,7 @@ KatTab:CreateSection("Keyless❌🔑")
 KatTab:CreateButton({
    Name = "Tbao Hub (KAT)",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubKat"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubKat"))()
    end,
 })
 
@@ -68,47 +83,47 @@ KatTab:CreateSection("Key🔑")
 KatTab:CreateButton({
    Name = "Not King Hub",
    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui'))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui'))()
    end,
 })
 
 -- Prison Life Tab
 local PrisonTab = Window:CreateTab("Prison Life", nil)
-local PrisonSection = PrisonTab:CreateSection("Keyless❌🔑")
+PrisonTab:CreateSection("Keyless❌🔑")
 
 PrisonTab:CreateButton({
    Name = "Tbao Hub (PL)",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
    end,
 })
 
 -- Blox Fruits Tab
 local BFTab = Window:CreateTab("Blox Fruits 🍉🍇", nil)
-local BFSection = BFTab:CreateSection("Keyless❌🔑")
+BFTab:CreateSection("Keyless❌🔑")
 
 BFTab:CreateButton({
    Name = "Redz hub🔴⬛",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))()
    end,
 })
 
 BFTab:CreateButton({
    Name = "Tbao auto bounty (key: 1234 )(not working❌)🈯",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubAutobouty"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubAutobouty"))()
    end,
 })
 
 -- Dead Rails Tab
-local DRTab = Window:CreateTab("Dead Rails 🧟‍♂🛣"), nil)
-local DRSection = BFTab:CreateSection("Key🔑")
+local DRTab = Window:CreateTab("Dead Rails 🧟‍♂🛣", nil)
+DRTab:CreateSection("Key🔑")
 
 DRTab:CreateButton({
-   Name = "Legends hub"
+   Name = "Legends hub",
    Callback = function()
-        loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()
+      loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()
    end,
 })
 
