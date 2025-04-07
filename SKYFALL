@@ -101,6 +101,17 @@ BFTab:CreateButton({
    end,
 })
 
+-- Dead Rails Tab
+local DRTab = Window:CreateTab("Dead Rails 🧟‍♂🛣"), nil)
+local DRSection = BFTab:CreateSection("Key🔑")
+
+DRTab:CreateButton({
+   Name = "Legends hub"
+   Callback = function()
+        loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()
+   end,
+})
+
 -- Info Tab
 local InfoTab = Window:CreateTab("Info", nil)
 
