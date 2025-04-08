@@ -13,6 +13,7 @@ background.BackgroundTransparency = 1
 background.ImageTransparency = 0.2 -- Ajusta esto para que el menú se vea mejor encima
 background.ZIndex = 0
 
+-- Cargar Rayfield
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -20,7 +21,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Preparing your AMAZING script hub😎",
    LoadingSubtitle = "made by Kotokha",
    ConfigurationSaving = {
-      Enabled = true,n 
+      Enabled = true,
       FolderName = nil,
       FileName = "Player Changer"
    },
@@ -68,7 +69,7 @@ UniversalsTab:CreateButton({
 })
 
 UniversalsTab:CreateButton({
-   Name = "Oragex hub ",
+   Name = "Oragex hub",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh667Ab2rW/main/ORANGEX%20V5%20RELEASED%20ORANGEX%20ON%20TOP%20.txt"))()
    end,
@@ -96,65 +97,4 @@ KatTab:CreateButton({
 
 -- Prison Life Tab
 local PrisonTab = Window:CreateTab("Prison Life", nil)
-PrisonTab:CreateSection("Keyless❌🔑")
-
-PrisonTab:CreateButton({
-   Name = "Tbao Hub (PL)",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
-   end,
-})
-
--- Blox Fruits Tab
-local BFTab = Window:CreateTab("Blox Fruits 🍉🍇", nil)
-BFTab:CreateSection("Keyless❌🔑")
-
-BFTab:CreateButton({
-   Name = "Redz hub🔴⬛",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))()
-   end,
-})
-
-BFTab:CreateButton({
-   Name = "Tbao auto bounty (key: 1234 )(not working❌)🈯",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubAutobouty"))()
-   end,
-})
-
--- Dead Rails Tab
-local DRTab = Window:CreateTab("Dead Rails 🧟‍♂🛣", nil)
-DRTab:CreateSection("Key🔑")
-
-DRTab:CreateButton({
-   Name = "Legends hub",
-   Callback = function()
-      loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()
-   end,
-})
-
--- Info Tab
-local InfoTab = Window:CreateTab("Info", nil)
-
-InfoTab:CreateParagraph({
-   Title = "Info",
-   Content = "Skyfall made by kotokha, with love to you😎❤"
-})
-
-InfoTab:CreateButton({
-   Name = "Discord (click to copy)",
-   Callback = function()
-      setclipboard("https://discord.gg/TA7TfCSVCQ")
-      Rayfield:Notify({
-         Title = "Copied to clipboard ✔️",
-         Content = "Join discord NOW",
-         Duration = 3
-      })
-   end,
-})
-
-InfoTab:CreateParagraph({
-   Title = "Info",
-   Content = "Join Discord for some of the hub keys"
-})
+PrisonTab:
