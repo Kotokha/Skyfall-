@@ -1,21 +1,3 @@
--- 🖼 Fondo de Gojo
-local player = game.Players.LocalPlayer
-local gui = Instance.new("ScreenGui")
-gui.Name = "SkyfallBackground"
-gui.ResetOnSpawn = false
-gui.Parent = player:WaitForChild("PlayerGui")
-
-local background = Instance.new("ImageLabel")
-background.Name = "BackgroundImage"
-background.Image = "rbxassetid://11401525648" -- Imagen de Gojo
-background.Size = UDim2.new(1, 0, 1, 0)
-background.Position = UDim2.new(0, 0, 0, 0)
-background.BackgroundTransparency = 1
-background.ImageTransparency = 0.2
-background.ZIndex = 0
-background.Parent = gui
-
--- 🚀 Cargar Rayfield UI
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -44,7 +26,6 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
--- ✅ Notificación al ejecutar
 Rayfield:Notify({
    Title = "Executed The Script Successfully",
    Content = "A Good Script Hub",
@@ -59,7 +40,6 @@ Rayfield:Notify({
    }
 })
 
--- 🌐 Universals Tab
 local UniversalsTab = Window:CreateTab("Universals", nil)
 UniversalsTab:CreateSection("Universal Scripts")
 
@@ -70,7 +50,6 @@ UniversalsTab:CreateButton({
    end
 })
 
--- 🔪 KAT Tab
 local KatTab = Window:CreateTab("KAT", nil)
 KatTab:CreateSection("Keyless❌🔑")
 
@@ -90,7 +69,6 @@ KatTab:CreateButton({
    end
 })
 
--- 🚔 Prison Life Tab
 local PrisonTab = Window:CreateTab("Prison Life", nil)
 PrisonTab:CreateSection("Keyless❌🔑")
 
@@ -101,7 +79,6 @@ PrisonTab:CreateButton({
    end
 })
 
--- 🥭 Blox Fruits Tab
 local BFTab = Window:CreateTab("Blox Fruits 🍉🍇", nil)
 BFTab:CreateSection("Keyless❌🔑")
 
@@ -119,7 +96,6 @@ BFTab:CreateButton({
    end
 })
 
--- 🧟‍♂ Dead Rails Tab
 local DRTab = Window:CreateTab("Dead Rails 🧟‍♂🛣", nil)
 DRTab:CreateSection("Key🔑")
 
@@ -130,7 +106,6 @@ DRTab:CreateButton({
    end
 })
 
--- ℹ️ Info Tab
 local InfoTab = Window:CreateTab("Info", nil)
 
 InfoTab:CreateParagraph({
