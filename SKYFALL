@@ -71,7 +71,7 @@ UniversalsTab:CreateButton({
 UniversalsTab:CreateButton({
    Name = "Oragex hub",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh667Ab2rW/main/ORANGEX%20V5%20RELEASED%20ORANGEX%20ON%20TOP%20.txt"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh66/OrangeX-Hub-V4/refs/heads/main/Protected%20V4%20OrangeX%20TOP.txt"))()
    end,
 })
 
