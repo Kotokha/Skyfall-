@@ -70,13 +70,6 @@ UniversalsTab:CreateButton({
    end
 })
 
-UniversalsTab:CreateButton({
-   Name = "OrangeX hub",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh66/OrangeX-Hub-V4/refs/heads/main/Protected%20V4%20OrangeX%20TOP.txt"))()
-   end
-})
-
 -- 🔪 KAT Tab
 local KatTab = Window:CreateTab("KAT", nil)
 KatTab:CreateSection("Keyless❌🔑")
