@@ -1,19 +1,21 @@
--- Fondo de Gojo
+-- 🖼 Fondo de Gojo
 local player = game.Players.LocalPlayer
-local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+local gui = Instance.new("ScreenGui")
 gui.Name = "SkyfallBackground"
 gui.ResetOnSpawn = false
+gui.Parent = player:WaitForChild("PlayerGui")
 
-local background = Instance.new("ImageLabel", gui)
+local background = Instance.new("ImageLabel")
 background.Name = "BackgroundImage"
-background.Image = "rbxassetid://11401525648" -- ID de imagen de Gojo
+background.Image = "rbxassetid://11401525648" -- Imagen de Gojo
 background.Size = UDim2.new(1, 0, 1, 0)
 background.Position = UDim2.new(0, 0, 0, 0)
 background.BackgroundTransparency = 1
-background.ImageTransparency = 0.2 -- Ajusta esto para que el menú se vea mejor encima
+background.ImageTransparency = 0.2
 background.ZIndex = 0
+background.Parent = gui
 
--- Cargar Rayfield
+-- 🚀 Cargar Rayfield UI
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -28,7 +30,7 @@ local Window = Rayfield:CreateWindow({
    Discord = {
       Enabled = true,
       Invite = "TA7TfCSVCQ",
-      RememberJoins = false,
+      RememberJoins = false
    },
    KeySystem = false,
    KeySettings = {
@@ -42,40 +44,40 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+-- ✅ Notificación al ejecutar
 Rayfield:Notify({
    Title = "Executed The Script Successfully",
    Content = "A Good Script Hub",
    Duration = 5,
-   Image = nil,
    Actions = {
       Ignore = {
          Name = "Okay!",
          Callback = function()
             print("The user tapped Okay!")
          end
-      },
-   },
+      }
+   }
 })
 
--- Universals Tab
+-- 🌐 Universals Tab
 local UniversalsTab = Window:CreateTab("Universals", nil)
-local UniversalsSection = UniversalsTab:CreateSection("Universals scripts")
+UniversalsTab:CreateSection("Universal Scripts")
 
 UniversalsTab:CreateButton({
    Name = "Infinite Yield",
    Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-   end,
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end
 })
 
 UniversalsTab:CreateButton({
-   Name = "Oragex hub",
+   Name = "OrangeX hub",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh66/OrangeX-Hub-V4/refs/heads/main/Protected%20V4%20OrangeX%20TOP.txt"))()
-   end,
+   end
 })
 
--- KAT Tab
+-- 🔪 KAT Tab
 local KatTab = Window:CreateTab("KAT", nil)
 KatTab:CreateSection("Keyless❌🔑")
 
@@ -83,7 +85,7 @@ KatTab:CreateButton({
    Name = "Tbao Hub (KAT)",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubKat"))()
-   end,
+   end
 })
 
 KatTab:CreateSection("Key🔑")
@@ -91,10 +93,71 @@ KatTab:CreateSection("Key🔑")
 KatTab:CreateButton({
    Name = "Not King Hub",
    Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui'))()
-   end,
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/zReal-King/Knife-Ability-Test/main/Gui"))()
+   end
 })
 
--- Prison Life Tab
+-- 🚔 Prison Life Tab
 local PrisonTab = Window:CreateTab("Prison Life", nil)
-PrisonTab:
+PrisonTab:CreateSection("Keyless❌🔑")
+
+PrisonTab:CreateButton({
+   Name = "Tbao Hub (PL)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+   end
+})
+
+-- 🥭 Blox Fruits Tab
+local BFTab = Window:CreateTab("Blox Fruits 🍉🍇", nil)
+BFTab:CreateSection("Keyless❌🔑")
+
+BFTab:CreateButton({
+   Name = "Redz Hub 🔴⬛",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))()
+   end
+})
+
+BFTab:CreateButton({
+   Name = "Tbao Auto Bounty (no funciona ❌) 🈯",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubAutobouty"))()
+   end
+})
+
+-- 🧟‍♂ Dead Rails Tab
+local DRTab = Window:CreateTab("Dead Rails 🧟‍♂🛣", nil)
+DRTab:CreateSection("Key🔑")
+
+DRTab:CreateButton({
+   Name = "Legends Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()
+   end
+})
+
+-- ℹ️ Info Tab
+local InfoTab = Window:CreateTab("Info", nil)
+
+InfoTab:CreateParagraph({
+   Title = "Info",
+   Content = "Skyfall made by Kotokha, with love to you 😎❤"
+})
+
+InfoTab:CreateButton({
+   Name = "Discord (click to copy)",
+   Callback = function()
+      setclipboard("https://discord.gg/TA7TfCSVCQ")
+      Rayfield:Notify({
+         Title = "Copied to clipboard ✔️",
+         Content = "Join Discord NOW",
+         Duration = 3
+      })
+   end
+})
+
+InfoTab:CreateParagraph({
+   Title = "Aviso",
+   Content = "Únete al Discord para conseguir algunas de las keys de los hubs."
+})
