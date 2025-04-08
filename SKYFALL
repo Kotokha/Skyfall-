@@ -20,7 +20,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Preparing your AMAZING script hub😎",
    LoadingSubtitle = "made by Kotokha",
    ConfigurationSaving = {
-      Enabled = true,
+      Enabled = true,n 
       FolderName = nil,
       FileName = "Player Changer"
    },
@@ -64,6 +64,13 @@ UniversalsTab:CreateButton({
    Name = "Infinite Yield",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+UniversalsTab:CreateButton({
+   Name = "Oragex hub ",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ImJosh667Ab2rW/main/ORANGEX%20V5%20RELEASED%20ORANGEX%20ON%20TOP%20.txt"))()
    end,
 })
 
