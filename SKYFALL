@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Skyfall Script Hub",
+   Name = "Skyfall Script Hubs",
    LoadingTitle = "Preparing your AMAZING script hub😎",
-   LoadingSubtitle = "made by Kotokha",
+   LoadingSubtitle = "by Kotokha",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil,
@@ -103,6 +103,16 @@ DRTab:CreateButton({
    Name = "Legends Hub",
    Callback = function()
       loadstring(game:HttpGet("https://scripts.city/LegendHub.lua"))()
+   end
+})
+
+local LT2Tab = Window:CreateTab("Lumber Tycoon 2 ⛺", nil)
+LT2Tab:CreateSection("Keyless❌🔑")
+
+LT2Tab:CreateButton({
+   Name = "Kron Hub"
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0"))("")
    end
 })
 
